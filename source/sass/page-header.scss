@@ -1,0 +1,87 @@
+
+.page-header {
+	min-height: 793px;
+	background-color: #1A4FA8;
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+.page-header__logo {
+	display: flex;
+	align-items: center;
+	span {
+		margin-left: 12px;
+	}
+
+}
+.main-nav__site-list {
+}
+.site-list {
+
+}
+
+.site-list,
+.user-list {
+	@include list-reset(0px);
+	display: flex;
+}
+
+.site-list__item  {
+	opacity: 0.5;
+	transition: all .5s;
+	&:hover {
+		opacity: 1;
+
+	}
+	margin-right: 50px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.site-list__item,
+.page-header__logo,
+.user-list__item {
+	a, span {
+		color: $text-white;
+		text-decoration: none;
+	}
+	.sign-up {
+		color: $text-purple;
+		padding: 8px 44px;
+		background-color: #fff;
+		border-radius: 20px;
+	}
+}
+.site-list__item,
+.user-list__item {
+	text-transform: uppercase;
+}
+.main-nav__user-list {
+}
+.user-list {
+}
+.user-list__item {
+	margin-right: 44px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+.login {
+}
+
+.inner {
+}

@@ -1,0 +1,8 @@
+// Сброс стилей по умолчанию у списков
+
+
+@mixin list-reset($property) {
+  margin: 0;
+  padding-left: $property;
+  list-style: none;
+}
