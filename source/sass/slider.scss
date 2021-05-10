@@ -1,0 +1,68 @@
+.slider__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 140px;
+}
+
+.slider__content {
+	max-width: 506px;
+}
+.slider__title {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 45px;
+	line-height: 60px;
+	font-weight: 700;
+	color: $text-white;
+}
+.slider__text {
+	margin: 0;
+	margin-bottom: 60px;
+	font-size: 24px;
+	line-height: 55px;
+	font-weight: 400;
+	color: $text-white;
+}
+.button__slider {
+	padding: 13px 39px;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 600;
+	color: $text-purple;
+	background-color: $yellow;
+	border-radius: 25px;
+
+}
+.slider__image {
+	margin-top: 22px;
+	margin-right: 80px;
+}
+
+
+.header-dots {
+	@include list-reset(0px);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	button {
+		display: block;
+		border:none;
+		background-color: #fff;
+		opacity: .5;
+		font-size: 0;
+		padding: 0;
+		height: 7px;
+		width: 7px;
+		border-radius: 3.5px;
+		cursor: pointer;
+		outline: none;
+		margin: 15px auto;
+	}
+}
+
+.slick-active {
+	button {
+		width: 15px;
+		opacity: 1;
+	}
+}

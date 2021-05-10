@@ -5,6 +5,9 @@ $text-black: #272727;
 
 $yellow: #FFCA00;
 
+
+@import "slick.scss";
+
 // $white: #fff;
 
 // $bg-gray: #f9f9f9;
@@ -27,6 +30,19 @@ margin: 0;
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+h2 {
+	margin: 0;
+	font-size: 35px;
+	line-height: 45px;
+	font-weight: 700;
+}
+
+.button {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 @import "page.scss";
 // @import "page-header.scss";
 
@@ -40,3 +56,5 @@ margin: 0;
 
 
 @import "page-header.scss";
+@import "slider.scss";
+@import "specialised.scss";
