@@ -1,0 +1,30 @@
+.page-footer {
+	.content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 61px;
+	}
+}
+
+.main-footer__help-links {
+	@include list-reset(0px);
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.help-links__item {
+	margin: 0 34px;
+	margin-top: 20px;
+	margin-bottom: 17px;
+	&:last-child {
+		margin-right: 0;
+	}
+	a {
+		text-decoration: none;
+		color: $text-black;
+	}
+}
+.main-footer__copyright {
+	margin: 0 34px;
+}

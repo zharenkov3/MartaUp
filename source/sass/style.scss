@@ -2,6 +2,7 @@
 $text-purple: #250F8A;
 $text-white: #fff;
 $text-black: #272727;
+$title-black: #202020;
 
 $yellow: #FFCA00;
 
@@ -9,55 +10,18 @@ $bg-light: #f4f9fd;
 
 @import "slick.scss";
 
-// $white: #fff;
-
-// $bg-gray: #f9f9f9;
-
-* {
-	box-sizing: border-box;
-}
-
-
 @import "fonts.scss";
-// @import "global.scss";
-// @import "visually-hidden.scss";
-// @import "viewports.scss";
+@import "global.scss";
+@import "visually-hidden.scss";
+@import "viewports.scss";
 @import "mixins/lists.scss";
 
-body {
-margin: 0;
-}
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
-h2,
-.features-item__title {
-	margin: 0;
-	font-size: 35px;
-	line-height: 45px;
-	font-weight: 700;
-}
-
-.button {
-	text-transform: uppercase;
-	text-decoration: none;
-}
 
 @import "page.scss";
-// @import "page-header.scss";
-
-// @import "about.scss";
-// @import "features.scss";
-// @import "reviews.scss";
-// @import "blog.scss";
-// @import "get-app.scss";
-
-// @import "button.scss";
-
-
 @import "page-header.scss";
 @import "slider.scss";
 @import "specialised.scss";
 @import "features.scss";
+@import "reviews.scss";
+@import "page-footer.scss";

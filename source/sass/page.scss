@@ -1,9 +1,16 @@
-.page {
-	font-family: 'Source Sans Pro', sans-serif;
+html {
+	height: 100%;
 }
-
-p {
-	font-size: 15px;
-	line-height: 24px;
-	font-weight: 400;
+.page-body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.page-header {
+}
+.page-main {
+	flex-grow: 1;
+}
+.page-footer {
 }
