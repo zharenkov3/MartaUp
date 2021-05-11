@@ -5,6 +5,7 @@ $text-black: #272727;
 
 $yellow: #FFCA00;
 
+$bg-light: #f4f9fd;
 
 @import "slick.scss";
 
@@ -31,7 +32,8 @@ margin: 0;
 	margin: 0 auto;
 }
 
-h2 {
+h2,
+.features-item__title {
 	margin: 0;
 	font-size: 35px;
 	line-height: 45px;
@@ -58,3 +60,4 @@ h2 {
 @import "page-header.scss";
 @import "slider.scss";
 @import "specialised.scss";
+@import "features.scss";

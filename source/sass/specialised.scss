@@ -1,6 +1,10 @@
 .specialised {
+	margin-top: 65px;
+	margin-bottom: 65px;
+	background-image: url("../img/specialised-figure-bg.svg");
+	background-position: left center;
+	background-repeat: no-repeat;
 	h2 {
-		margin-top: 65px;
 		text-align: center;
 	}
 }
@@ -23,7 +27,6 @@
 }
 .spicialised-item__title {
 	margin: 0;
-
 	margin-bottom: 11px;
 }
 .spicialised-item__images {
@@ -40,3 +43,4 @@
 		margin-bottom: 0;
 	}
 }
+
