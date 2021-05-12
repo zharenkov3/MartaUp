@@ -7,23 +7,47 @@
 	h2 {
 		text-align: center;
 	}
+	@media (max-width: 1200px) {
+		background-image: none;
+	}
 }
 .specialised-wrapper {
 	max-width: 980px;
 	margin: 0 auto;
 	margin-top: 95px;
+	@media (max-width: 1000px) {
+		margin-top: 60px;
+
+	}
 }
 .specialised-list {
 	@include list-reset(0px);
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	@media (max-width: 768px) {
+		justify-content: space-around;
+
+	}
+
 }
 .specialised-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 280px;
+	width: 280px;
 	min-height: 280px;
+	@media (max-width: 768px) {
+		width: 45%;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: 550px) {
+		width: 80%;
+	}
+
 }
 .spicialised-item__title {
 	margin: 0;

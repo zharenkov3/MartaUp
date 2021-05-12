@@ -5,6 +5,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $text-white;
+	@media (max-width: 1000px) {
+		padding-bottom: 40px;
+	}
+	@media (max-width: 768px) {
+		padding-bottom: 20px;
+	}
 
 }
 .reviews-title {
@@ -20,17 +26,34 @@
 	margin-top: 48px;
 	max-width: 940px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 
 }
 .reviews-item {
-	max-width: 300px;
+	width: 300px;
 	padding: 35px 20px;
 	background-color: rgba(255,255,255, .2);
 	border-radius: 5px;
+	@media (max-width: 1000px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 48%;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 768px) {
+		width: 90%;
+	}
 }
 .author {
 	display: flex;
+	@media (max-width: 1000px) {
+		margin-left: -100px;
+	}
+	@media (max-width: 768px) {
+		margin-left: -50px;
+	}
 }
 .author-userpic img {
 	border-radius: 50%;
@@ -60,5 +83,8 @@
 		top: -40px;
 		left: 0;
 		right: 0;
+	}
+	@media (max-width: 768px) {
+		width: 85%;
 	}
 }

@@ -1,6 +1,15 @@
+* {
+	box-sizing: border-box;
+}
 .page {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 
 p {
 	font-size: 15px;
@@ -9,12 +18,13 @@ p {
 }
 
 body {
-margin: 0;
-color: $text-black;
+	margin: 0;
+	color: $text-black;
 }
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 h2,

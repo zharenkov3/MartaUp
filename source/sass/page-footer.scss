@@ -4,6 +4,10 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 61px;
+		@media (max-width: 600px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 }
 
@@ -11,7 +15,9 @@
 	@include list-reset(0px);
 	display: flex;
 	flex-wrap: wrap;
-
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
 }
 .help-links__item {
 	margin: 0 34px;
@@ -23,6 +29,11 @@
 	a {
 		text-decoration: none;
 		color: $text-black;
+	}
+	@media (max-width: 768px) {
+		margin-top: 15px;
+		margin-right: 15px;
+		margin-left: 15px;
 	}
 }
 .main-footer__copyright {

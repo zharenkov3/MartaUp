@@ -1,11 +1,23 @@
 
 .page-header {
-	min-height: 793px;
+	min-height: 750px;
+	padding-bottom: 20px;
 	background-color: #1A4FA8;
 	background-image: url("../img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	@media (max-width: 1200px) {
+		min-height:550px;
+	}
+	@media (max-width: 1000px) {
+		min-height: 500px;
+	}
+
+	@media (max-width: 500px) {
+		min-height: 700px;
+	}
+
 }
 
 .main-nav {
@@ -25,13 +37,45 @@
 	span {
 		margin-left: 12px;
 	}
+}
+
+.mobile-line-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+	align-items: center;
+}
+
+.main-nav__btn {
+	position: relative;
+	width: 30px;
+	height: 28px;
+	span {
+		position: absolute;
+		top: 13px;
+		width: 100%;
+		height: 2px;
+		background-color: $text-white;
+	}
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: $text-white;
+	}
+	&::after {
+		top: 0;
+	}
+	&::before {
+		bottom: 0;
+	}
 
 }
-.main-nav__site-list {
-}
-.site-list {
 
-}
+.main-nav__site-list {}
+.site-list {}
 
 .site-list,
 .user-list {
@@ -44,7 +88,6 @@
 	transition: all .5s;
 	&:hover {
 		opacity: 1;
-
 	}
 	margin-right: 50px;
 	&:last-child {
@@ -70,8 +113,8 @@
 .user-list__item {
 	text-transform: uppercase;
 }
-.main-nav__user-list {
-}
+.main-nav__user-list {}
+
 .user-list {
 }
 .user-list__item {
@@ -79,9 +122,75 @@
 	&:last-child {
 		margin-right: 0px;
 	}
+
 }
 .login {
 }
 
 .inner {
 }
+
+
+@media (max-width: 768px) {
+	.main-nav {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.main-nav__user-list {
+		justify-content: flex-end;
+		width: 85%;
+		margin-top: 30px
+	}
+	.site-list__item {
+		margin-right: 30px;
+	}
+	.user-list__item {
+		display: inline-block;
+		margin-right: 22px;
+	}
+	.mobile-line-wrapper {
+		justify-content: space-around;
+	}
+
+}
+
+@media (max-width: 610px) {
+
+}
+
+@media (max-width: 500px) {
+	.main-nav__user-list {
+		justify-content: center;
+		width: 85%;
+		margin-top: 30px;
+	}
+	.main-nav__site-list {
+		display: none;
+	}
+}
+
+@media (min-width: 500px) {
+	.main-nav__btn {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.main-nav {
+		flex-direction: column;
+	}
+	.mobile-line-wrapper {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+}
+
+@media (min-width: 450px) {
+
+}
+

@@ -8,7 +8,7 @@ $yellow: #FFCA00;
 
 $bg-light: #f4f9fd;
 
-@import "slick.scss";
+// @import "slick.scss";
 
 @import "fonts.scss";
 @import "global.scss";
@@ -25,3 +25,5 @@ $bg-light: #f4f9fd;
 @import "features.scss";
 @import "reviews.scss";
 @import "page-footer.scss";
+
+@import "adaptive.scss";

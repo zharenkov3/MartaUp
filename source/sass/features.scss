@@ -1,7 +1,9 @@
 .features {
-	padding-top: 63px;
-	padding-bottom: 50px;
+	padding: 50px 0;
 	background-color: $bg-light;
+		@media (max-width: 768px) {
+			padding: 25px 0;
+		}
 }
 .visually-hidden {
 }
@@ -16,23 +18,67 @@
 	&:last-child {
 		margin-bottom: 0px;
 	}
+	@media (max-width: 1000px) {
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 25px;
+	}
+
 }
 .features__content {
 	max-width: 460px;
 	margin-top: 61px;
 	padding-top: 68px;
 	padding-left: 47px;
+	@media (max-width: 1160px) {
+		margin-top: 20px;
+	}
+	@media (max-width: 1000px) {
+		margin-top: 0;
+		padding-top: 30px;
+		max-width: 80%;
+	}
+	@media (max-width: 768px) {
+		max-width: 100%;
+		padding-right: 47px;
+	}
 }
 .features-item__title {
 	margin-bottom: 30px;
 	position: relative;
+	@media (max-width: 1000px) {
+		max-width: 70%;
+	}
+	@media (max-width: 768px) {
+		max-width: 95%
+	}
 
 }
 .figure-blot--one {
 }
 .feature-item__text {
+	@media (max-width: 1000px) {
+		max-width: 90%;
+	}
+	@media (max-width: 768px) {
+		max-width: 95%;
+	}
 }
 .features__images {
+	@media (max-width: 1160px) {
+		padding-left: 30px;
+		img {
+			position: relative;
+			max-width: 90%;
+			bottom: 0px;
+			right: 0px;
+		}
+	}
+	@media (max-width: 1000px) {
+		display: none;
+	}
+
 }
 
 .feature-item--reverse {
